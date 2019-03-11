@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+setcookie('flavour','chocolate chip');
+<br>
+setcookie('flavour','chocolate chip',1417608000,'/products',www.example.com');
+<br>
+setcookie('flavour','chocolate chip',1417608000);
+<br>
+setcookie('flavor','chocolate chip',,'',www.example.com');
+<br>
+if ( isset($_COOKIE['flavour'])) {
+        echo "You ate a "  .  $_COOKIE['flavour'] . "cookie." ;
+}
+foreach ($_COOKIE as $cookie_name => $ cookie_value);
+{
+print "$cookie_name = $cookie_value <br/>";
+}
+setcookie('flavor','',1);
+
+
+</body>
+</html>
